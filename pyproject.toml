@@ -1,0 +1,23 @@
+[project]
+name = "everybody-codes"
+version = "0.1.0"
+description = "Everybody Codes"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cryptography>=50.0.2",
+    "deep-translator>=1.11.4",
+    "markdownify>=1.2.3",
+    "pytest>=9.1.1",
+    "requests>=2.34.2",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+ec = "ec.cli:main"
+
+[tool.setuptools]
+packages = ["ec"]
